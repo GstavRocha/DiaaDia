@@ -1,0 +1,148 @@
+.headerPosition{
+    position: relative;
+}
+.LoginIndex1{
+    background: #ffffff;
+    width: 100%;
+    align-content: center;
+
+}
+.loginIndex2{
+    position: absolute;
+    width: 50%;
+    left: 50%;
+    top: 0px;
+    height: 100%;
+    background-color: #ffffff;
+
+}
+.LoginHeader1{
+    position: relative;
+    width: 555px;
+    height: 22px;
+    left: 300px;
+    top: -1px;
+    font-family: 'Work Sans', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 117px;
+    letter-spacing: -0.02em;
+    color: #000000;
+}
+.LoginHeader2{
+    position: relative;
+    width: 555px;
+    height: 250px;
+    left: 300px;
+    font-family: 'Work Sans', serif;
+    font-style: normal;
+    font-weight: 350;
+    font-size: 60px;
+    line-height: 100px;
+    letter-spacing: -0.01em;
+
+    color: #000000;
+}
+.logoGrande{
+    padding-top: 70px;
+    padding-left: 100px;
+    width: 571.01px;
+    height: 438.18px;
+    left: 763.18px;
+    top: 230px;
+    border-radius: 96px 219.092px 219.092px 80px;
+    transform: rotate(0.42deg);
+}
+.rectangle{
+    position: absolute;
+    width: 100%;
+    height: 173px;
+    left: 0px;
+    top: 719px;
+
+    background: linear-gradient(90deg, #EEAFC9 32.99%, #8E8EE9 70.9%);
+}
+.loginBox{
+    position: relative;
+    width: 611px;
+    height: 300px;
+    top: -100px;
+    left: 220px;
+    background: rgb(255, 255, 255);
+}
+.loginText{
+    position: relative;
+    left: 21px;
+    top: 0px;
+
+    font-family: 'Work Sans', serif;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 23px;
+    letter-spacing: 0.10em;
+
+    color: #000000;
+}
+.loginInputText{
+    position: relative;
+    top: 0px;
+    width: 550px;
+    height: 60px;
+    left: 21px;
+    border: none;
+    border-bottom: 5px solid;
+    border-bottom-color: #ECA8C5;
+    font-size: 20px;
+}
+.loginInputText2{
+    position: relative;
+    width: 549px;
+    height: 60px;
+    left: 21px;
+    border: none;
+    border-bottom: 5px solid;
+    border-bottom-color: #ECA8C5;
+    font-size: 20px;
+}
+.loginButton{
+    position: relative;
+    top: 20px;
+    width: 342px;
+    height: 48px;
+    left: 122px;
+    border: none;
+    font-size: 20px;
+
+    background: #ECA8C5;
+    border-radius: 50px;
+}
+.rescuepass{
+    position: relative;
+    left: 29px;
+    top: 15px;
+    border: none;
+
+    font-family: 'Work Sans', serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: -0.02em;
+
+    color: #000000;
+}
+.fakelink{
+    position: relative;
+    left: 29px;
+    border: none;
+
+    font-family: 'Work Sans', serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: -0.02em;
+
+    color: rgba(96, 30, 210, 0.93);
+}
