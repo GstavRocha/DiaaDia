@@ -1,17 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles/index.css';
+import Dashboard from "./dashboard/dashboard";
 // pages
 import './login/login'
 import reportWebVitals from './reportWebVitals';
-import LoginIndex from "./login/login";
+
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <LoginIndex/>
+    <Dashboard/>
   </React.StrictMode>
 );
 

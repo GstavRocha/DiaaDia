@@ -1,0 +1,128 @@
+.dashboard{
+    position: relative;
+    background-color: rgba(210, 105, 30, 0.93);
+}
+.topo{
+    background-color: #07489a;
+}
+.sidebar{
+    position: relative;
+    top: 0px;
+    width: 15%;
+    height: 1024px;
+    box-sizing: border-box;
+
+    /* Sidebar/ItemList/14px */
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    letter-spacing: -0.01em;
+
+    color: #FCDDEC;
+
+
+    background: #200E32;
+    border-right: 1.5px solid #262835;
+}
+.sidebar h1{
+    position: absolute;
+    height: 61px;
+    left: 35px;
+    top: 20px;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 61px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}
+.menu{
+    position: absolute;
+    width: 236px;
+    height: 437.82px;
+    left: 27px;
+    top: 117.83px;
+
+}
+.dashBoardLayout{
+    background-color: #61dafb;
+    position: absolute;
+    width: 85%;
+    height: 850px;
+    left: 15%;
+    top: 17%;
+
+}
+.topo{
+    position: absolute;
+    width: 85%;
+    height: 173px;
+    left: 15%;
+    top: 0px;
+    background: linear-gradient(90deg, #EEAFC9 32.99%, #8E8EE9 70.9%);
+
+}
+.cadastrar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 27px;
+    gap: 19px;
+    color: #FFFFFF;
+
+    position: relative;
+    width: 211px;
+    height: 40px;
+    top: 3%;
+    left: 1%;
+
+    background: #200E32;
+    box-shadow: 4px 4px 58px rgba(0, 0, 0, 0.12);
+    border-radius: 55px;
+}
+.tituloDashBoard{
+    position: relative;
+    top: 6%;
+    left: 1%;
+
+}
+.dashBoardPanels{
+    position: relative;
+    left: 1%;
+    top: 9%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+}
+.cardPanel{
+    width: 318px;
+    height: 197px;
+    left: 0px;
+    top: 0px;
+    background: #200E32;
+    border-radius: 12px;
+}
+.dashTable{
+    position: relative;
+    top: 12%;
+    left: 1%;
+}
+.calendar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 6px;
+    color: #55597D;
+    top: 3%;
+    left: 80%;
+}
