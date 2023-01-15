@@ -5,6 +5,7 @@ import Dashboard from "./dashboard/dashboard";
 // pages
 import './login/login'
 import reportWebVitals from './reportWebVitals';
+import Login from "./login/login";
 
 
 const root = ReactDOM.createRoot(

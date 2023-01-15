@@ -1,31 +1,25 @@
 .dashboard{
     position: relative;
-    background-color: rgba(210, 105, 30, 0.93);
 }
 .topo{
     background-color: #07489a;
+}
+.topo li{
+    list-style-type: none;
 }
 .sidebar{
     position: relative;
     top: 0px;
     width: 15%;
-    height: 1024px;
+    height: 1200px;
     box-sizing: border-box;
-
-    /* Sidebar/ItemList/14px */
-
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
-    /* identical to box height */
-
     letter-spacing: -0.01em;
-
     color: #FCDDEC;
-
-
     background: #200E32;
     border-right: 1.5px solid #262835;
 }
@@ -45,6 +39,21 @@
 
     color: #FFFFFF;
 }
+.div_busca{
+    position: relative;
+    height: 32px;
+    top: 50px;
+}
+.busca_input{
+    background: #FCDDEC;
+    width: 600px;
+    border: none;
+    font-size: 20px;
+}
+.busca_svg{
+    margin-left: 15px;
+}
+
 .menu{
     position: absolute;
     width: 236px;
@@ -54,7 +63,7 @@
 
 }
 .dashBoardLayout{
-    background-color: #61dafb;
+    background-color: #ffffff;
     position: absolute;
     width: 85%;
     height: 850px;
@@ -72,36 +81,54 @@
 
 }
 .cadastrar{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px 27px;
+    padding: 0px 23px;
     gap: 19px;
-    color: #FFFFFF;
-
     position: relative;
-    width: 211px;
+    /* width: 211px; */
     height: 40px;
     top: 3%;
     left: 1%;
-
     background: #200E32;
-    box-shadow: 4px 4px 58px rgba(0, 0, 0, 0.12);
     border-radius: 55px;
+    color: #ffffff;
+    font-size: 1.2em;
 }
 .tituloDashBoard{
     position: relative;
+    width: 300px;
     top: 6%;
-    left: 1%;
 
+    margin-left: 3%;
+
+}
+.tituloDashBoard_tabela{
+    width: 300px;
+    top: 6%;
+    margin-left: 2%;
+    width: 302px;
+    height: 24px;
+
+    /* Header/h2 */
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color: #5D5FEF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 .dashBoardPanels{
     position: relative;
-    left: 1%;
+    margin-left: 3%;
     top: 9%;
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 10px;
+    grid-template-columns: auto auto auto;
+    width: 1000px;
+    column-gap: 25%;
 }
 .cardPanel{
     width: 318px;
@@ -111,18 +138,102 @@
     background: #200E32;
     border-radius: 12px;
 }
+.cardStile{
+    position: relative;
+    left:10%;
+    color: #FFFFFF;
+}
+.cardPesquisa{
+    height: 24px;
+    left: 10%;
+    top: 30%;
+    margin-left: 8%;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+    background-color: #200E32;
+    border: none;
+
+    color: rgb(255, 255, 255);
+}
 .dashTable{
     position: relative;
     top: 12%;
-    left: 1%;
 }
 .calendar{
+    position: relative;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     align-items: center;
     padding: 0px;
-    gap: 6px;
+    right: 150px;
     color: #55597D;
     top: 3%;
-    left: 80%;
+}
+.tabela{
+    position: relative;
+    order: 1;
+    flex-grow: 5;
+    margin-left: 3%;
+    display: flex;
+    flex-direction: column;
+}
+.tabela td, th{
+    text-align: center;
+    position: relative;
+    border-bottom: 1px solid rgba(65, 25, 133, 0.93);
+    width: 300px;
+    height: 30px;
+    left: 0px;
+    top: 39px;
+}
+.colors{
+    color: #27d527 !important;
+}
+.panelExpositor{
+    position: inherit;
+    top: 66px;
+    margin: 2% 5%;
+    padding-bottom: 15px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 58px;
+    line-height: 70px;
+    letter-spacing: -0.02em;
+    color: #DDEFFA;
+}
+.usuario{
+    position: relative;
+    width: 280px;
+    height: 11px;
+    left: 929px;
+    top: -15px;
+    margin: 0px;
+}
+.usuario_img{
+    width: 100.78px;
+    height: 100px;
+    left: 40px;
+    top: -10px;
+    border-radius: 50px;
+    background: #D9D9D9;
+}
+.usuario_login{
+    position: relative;
+    width: 210px;
+    height: 16px;
+    left: 40%;
+    top: -75px;
+    margin: 1px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }

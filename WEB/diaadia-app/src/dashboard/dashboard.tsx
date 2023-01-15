@@ -1,5 +1,7 @@
 import React from 'react';
 import '../styles/dashboard.css';
+import logoDash  from '../styles/img/logoGrande.png';
+import usuarioexemplo from '../styles/img/borat.jpeg';
 
 
 const DashBoard = () =>{
@@ -88,13 +90,25 @@ const DashBoard = () =>{
           </div>
           <div className="topo">
               <ul>
-                  <li><input type="text" className="busca"/></li>
-                  <li><img src="" alt="" className="usuario"/></li>
-                  <li><img src="" alt="" className="logoGrande"/></li>
+                  <li>
+                      <div className="div_busca">
+                      <input type="text" className="busca_input" placeholder="Buscar"/>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                               className="bi bi-search busca_svg" viewBox="0 0 16 16">
+                              <path
+                                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                          </svg>
+                      </div>
+                  </li>
+                  <li><div className="usuario">
+                      <img src={usuarioexemplo}alt="" className="usuario_img"/>
+                      <p className="usuario_login"> Seja bem vindo João Fulano</p>
+                  </div></li>
+                  <li><img src={logoDash} alt="" className="logoGrande"/></li>
               </ul>
           </div>
           <div className="dashBoardLayout">
-              <button className="cadastrar">Cadastrar Paciente</button>
+              <input type="submit" className="cadastrar" value="Cadastrar Paciente" />
               <h3 className="tituloDashBoard">
                   APP Indices CLINICA MÉDICA
               </h3>
@@ -105,115 +119,106 @@ const DashBoard = () =>{
                           d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
                       <path
                           d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-                  </svg> 10/JANEIRO/2023</p>
+                  </svg>10/JANEIRO/2023</p>
               <div className="dashBoardPanels">
                   <div className="cardPanel">
                       <p className="cardStile">Pacientes</p>
-                      <img src="" alt="" className="cardImage"/>
-                      <p className="panelExpositor"></p>
-                      <button className="cardPesquisa"> Pesquisar Paciente</button>
+                      <p className="panelExpositor">2,100</p>
+                      <input  type="submit" className="cardPesquisa" value="Pesquisar Paciente"/>
                   </div>
                   <div className="cardPanel">
                       <p className="cardStile">Total de Aferições</p>
-                      <img src="" alt="" className="cardImage"/>
-                      <p className="panelExpositor"></p>
-                      <button className="cardPesquisa"> Pesquisar Paciente</button>
-                  </div>
-                  <div className="cardPanel">
-                      <p className="cardStile">Pacientes</p>
-                      <img src="" alt="" className="cardImage"/>
-                      <p className="panelExpositor"></p>
-                      <button className="cardPesquisa"> Pesquisar Paciente</button>
+                      <p className="panelExpositor">500</p>
+                      <input  type="submit" className="cardPesquisa colors" value="+50(10%)"/>
                   </div>
                   <div className="cardPanel">
                       <p className="cardStile">Médicos Disponíveis</p>
-                      <img src="" alt="" className="cardImage"/>
-                      <p className="panelExpositor"></p>
-                      <button className="cardPesquisa"> Consultar Agenda</button>
+                      <p className="panelExpositor">13</p>
+                      <input  type="submit" className="cardPesquisa" value="Consultar Agenda"/>
                   </div>
               </div>
               <div className="dashTable">
-                  <h3 className="tituloDashBoard">
+                  <h3 className="tituloDashBoard_tabela">
                       Consultas agendadas para Hoje.
                   </h3>
                   <table className="tabela">
-                      <tr className="estiloTabelaLinhas">
-                          <th className="estiloTabelaColunas_No"> NO</th>
-                          <th className="estiloTabelaColunas_Nome"> Nome Completo</th>
-                          <th className="estiloTabelaColunas_Horario">Horário</th>
-                          <th className="estiloTabelaColunas_Clinica">Clinica</th>
-                          <th className="estiloTabelaColunas_Medico">Médico</th>
+                      <tr>
+                          <th> NO</th>
+                          <th> Nome Completo</th>
+                          <th>Horário</th>
+                          <th>Clinica</th>
+                          <th>Médico</th>
 
                       </tr>
                       <tr className="estiloTabelaLinhas">
-                        <td className="estiloElementosTabela">1</td>
-                        <td className="estiloElementosTabela">Zé das Tantas Tantam</td>
-                        <td className="estiloElementosTabela">0:00</td>
-                        <td className="estiloElementosTabela">UNIDADE X</td>
-                        <td className="estiloElementosTabela">Hipocrates</td>
+                        <td>1</td>
+                        <td>Zé das Tantas Tantam</td>
+                        <td>0:00</td>
+                        <td>UNIDADE X</td>
+                        <td>Hipocrates</td>
                       </tr>
                       <tr className="estiloTabelaLinhas">
-                          <td className="estiloElementosTabela">1</td>
-                          <td className="estiloElementosTabela">Zé das Tantas Tantam</td>
-                          <td className="estiloElementosTabela">0:00</td>
-                          <td className="estiloElementosTabela">UNIDADE X</td>
-                          <td className="estiloElementosTabela">Hipocrates</td>
+                          <td>1</td>
+                          <td>Zé das Tantas Tantam</td>
+                          <td>0:00</td>
+                          <td>UNIDADE X</td>
+                          <td>Hipocrates</td>
                       </tr>
                       <tr className="estiloTabelaLinhas">
-                          <td className="estiloElementosTabela">1</td>
-                          <td className="estiloElementosTabela">Zé das Tantas Tantam</td>
-                          <td className="estiloElementosTabela">0:00</td>
-                          <td className="estiloElementosTabela">UNIDADE X</td>
-                          <td className="estiloElementosTabela">Hipocrates</td>
+                          <td>1</td>
+                          <td>Zé das Tantas Tantam</td>
+                          <td>0:00</td>
+                          <td>UNIDADE X</td>
+                          <td>Hipocrates</td>
                       </tr>
                       <tr className="estiloTabelaLinhas">
-                          <td className="estiloElementosTabela">1</td>
-                          <td className="estiloElementosTabela">Zé das Tantas Tantam</td>
-                          <td className="estiloElementosTabela">0:00</td>
-                          <td className="estiloElementosTabela">UNIDADE X</td>
-                          <td className="estiloElementosTabela">Hipocrates</td>
+                          <td>1</td>
+                          <td>Zé das Tantas Tantam</td>
+                          <td>0:00</td>
+                          <td>UNIDADE X</td>
+                          <td>Hipocrates</td>
                       </tr>
                       <tr className="estiloTabelaLinhas">
-                          <td className="estiloElementosTabela">1</td>
-                          <td className="estiloElementosTabela">Zé das Tantas Tantam</td>
-                          <td className="estiloElementosTabela">0:00</td>
-                          <td className="estiloElementosTabela">UNIDADE X</td>
-                          <td className="estiloElementosTabela">Hipocrates</td>
+                          <td>1</td>
+                          <td>Zé das Tantas Tantam</td>
+                          <td>0:00</td>
+                          <td>UNIDADE X</td>
+                          <td>Hipocrates</td>
                       </tr>
                       <tr className="estiloTabelaLinhas">
-                          <td className="estiloElementosTabela">1</td>
-                          <td className="estiloElementosTabela">Zé das Tantas Tantam</td>
-                          <td className="estiloElementosTabela">0:00</td>
-                          <td className="estiloElementosTabela">UNIDADE X</td>
-                          <td className="estiloElementosTabela">Hipocrates</td>
+                          <td>1</td>
+                          <td>Zé das Tantas Tantam</td>
+                          <td>0:00</td>
+                          <td>UNIDADE X</td>
+                          <td>Hipocrates</td>
                       </tr>
-                      <tr className="estiloTabelaLinhas">
-                          <td className="estiloElementosTabela">1</td>
-                          <td className="estiloElementosTabela">Zé das Tantas Tantam</td>
-                          <td className="estiloElementosTabela">0:00</td>
-                          <td className="estiloElementosTabela">UNIDADE X</td>
-                          <td className="estiloElementosTabela">Hipocrates</td>
+                      <tr>
+                          <td>1</td>
+                          <td>Zé das Tantas Tantam</td>
+                          <td>0:00</td>
+                          <td>UNIDADE X</td>
+                          <td>Hipocrates</td>
                       </tr>
-                      <tr className="estiloTabelaLinhas">
-                          <td className="estiloElementosTabela">1</td>
-                          <td className="estiloElementosTabela">Zé das Tantas Tantam</td>
-                          <td className="estiloElementosTabela">0:00</td>
-                          <td className="estiloElementosTabela">UNIDADE X</td>
-                          <td className="estiloElementosTabela">Hipocrates</td>
+                      <tr>
+                          <td>1</td>
+                          <td>Zé das Tantas Tantam</td>
+                          <td>0:00</td>
+                          <td>UNIDADE X</td>
+                          <td>Hipocrates</td>
                       </tr>
-                      <tr className="estiloTabelaLinhas">
-                          <td className="estiloElementosTabela">1</td>
-                          <td className="estiloElementosTabela">Zé das Tantas Tantam</td>
-                          <td className="estiloElementosTabela">0:00</td>
-                          <td className="estiloElementosTabela">UNIDADE X</td>
-                          <td className="estiloElementosTabela">Hipocrates</td>
+                      <tr>
+                          <td>1</td>
+                          <td>Zé das Tantas Tantam</td>
+                          <td>0:00</td>
+                          <td>UNIDADE X</td>
+                          <td>Hipocrates</td>
                       </tr>
-                      <tr className="estiloTabelaLinhas">
-                          <td className="estiloElementosTabela">1</td>
-                          <td className="estiloElementosTabela">Zé das Tantas Tantam</td>
-                          <td className="estiloElementosTabela">0:00</td>
-                          <td className="estiloElementosTabela">UNIDADE X</td>
-                          <td className="estiloElementosTabela">Hipocrates</td>
+                      <tr>
+                          <td>1</td>
+                          <td>Zé das Tantas Tantam</td>
+                          <td>0:00</td>
+                          <td>UNIDADE X</td>
+                          <td>Hipocrates</td>
                       </tr>
                   </table>
 

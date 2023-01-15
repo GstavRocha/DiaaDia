@@ -45,13 +45,12 @@
     color: #000000;
 }
 .logoGrande{
-    padding-top: 70px;
-    padding-left: 100px;
-    width: 571.01px;
-    height: 438.18px;
-    left: 763.18px;
-    top: 230px;
-    border-radius: 96px 219.092px 219.092px 80px;
+    position: relative;
+    width: 172.35px;
+    height: 121.51px;
+    left: 1247.29px;
+    top: -40px;
+    border-radius: 50px 219.092px 219.092px 80px;
     transform: rotate(0.42deg);
 }
 .rectangle{
