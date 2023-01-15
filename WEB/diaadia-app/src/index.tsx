@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './styles/index.css';
 import Dashboard from "./dashboard/dashboard";
 // pages
-import './login/login'
 import reportWebVitals from './reportWebVitals';
-import Login from "./login/login";
+import DashBoard from "./dashboard/dashboard";
+import LoginIndex from "./login/login";
 
 
 const root = ReactDOM.createRoot(
@@ -13,7 +13,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <Dashboard/>
+    <LoginIndex/>
   </React.StrictMode>
 );
 

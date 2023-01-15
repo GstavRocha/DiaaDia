@@ -237,3 +237,12 @@
     text-transform: uppercase;
     color: #FFFFFF;
 }
+.logoDash{
+    position: relative;
+    width: 172.35px;
+    height: 121.51px;
+    left: 1247.29px;
+    top: -40.81px;
+    border-radius: 50px 219.092px 219.092px 80px;
+    transform: rotate(0.42deg);
+}

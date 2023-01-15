@@ -104,7 +104,7 @@ const DashBoard = () =>{
                       <img src={usuarioexemplo}alt="" className="usuario_img"/>
                       <p className="usuario_login"> Seja bem vindo João Fulano</p>
                   </div></li>
-                  <li><img src={logoDash} alt="" className="logoGrande"/></li>
+                  <li><img src={logoDash} alt="logo clinica" className="logoDash"/></li>
               </ul>
           </div>
           <div className="dashBoardLayout">
