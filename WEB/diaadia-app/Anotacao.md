@@ -4,3 +4,5 @@ REACT ROUTER
 https://reactrouter.com/en/6.6.2/components/nav-link
 
 https://react-redux.js.org/using-react-redux/usage-with-typescript
+
+https://reactrouter.com/en/main/start/tutorial

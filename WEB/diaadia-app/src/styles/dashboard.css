@@ -246,3 +246,7 @@
     border-radius: 50px 219.092px 219.092px 80px;
     transform: rotate(0.42deg);
 }
+.Links{
+    text-decoration: none;
+    color: white;
+}

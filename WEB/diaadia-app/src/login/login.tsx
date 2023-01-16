@@ -1,10 +1,7 @@
 import React from 'react';
 import logo  from '../styles/img/logoGrande.png';
 import '../styles/login.css';
-
-
-
-
+import {Link } from "react-router-dom";
 
 
 const LoginIndex = () =>{
@@ -21,9 +18,12 @@ const LoginIndex = () =>{
                          <br/>
                          <input placeholder="Senha" type="text" className="loginInputText2"/>
                          <br/>
-                         <input value="login" type="button" className="loginButton"/>
+                         <Link to={"/dashboard"}>
+                         <input value="login" type="submit" className="loginButton"/>
+                         </Link>
                          <p className="rescuepass"> Esqueceu a senha?</p>
-                         <p className="fakelink"> Clinque Aqui!</p>
+                                <button className="fakelink">Clinque Aqui!</button>
+
                      </div>
                 </div>
                 <div className="loginIndex2">

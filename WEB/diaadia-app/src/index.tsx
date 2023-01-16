@@ -1,19 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { createBrowserRouter,RouterProvider} from "react-router-dom";
 import './styles/index.css';
-import Dashboard from "./dashboard/dashboard";
-// pages
 import reportWebVitals from './reportWebVitals';
-import DashBoard from "./dashboard/dashboard";
 import LoginIndex from "./login/login";
-
+import DashBoard from "./dashboard/dashboard";
+const router = createBrowserRouter([
+    {path: "/", element:<LoginIndex/>},{path: "/dashboard", element:<DashBoard/>,}
+])
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <LoginIndex/>
+    <RouterProvider router={router}/>
   </React.StrictMode>
 );
 
