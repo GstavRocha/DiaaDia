@@ -16,10 +16,12 @@ In this project is prefers the development application, the designer not stay pr
 We consider the relevant contribuition the comunities for growth this tecnologies. Thus we using:
 
 **Data Base:**
-  1. MySql;
+  1. MySql ou Postgresql;
 
 **Back End**
-1. Python3
+1. Python3;
+<br>
+2. FastApi;
 
 **Desktop Aplication:**
 1. React;
@@ -28,6 +30,10 @@ We consider the relevant contribuition the comunities for growth this tecnologie
 
 **Mobile Aplciation:**
 1. Flutter;
+<br>
 2. Dart.
+** Analise de Dados**
+1. Pandas;
+
 
 https://react-bootstrap.github.io/getting-started/introduction/
