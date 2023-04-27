@@ -9,6 +9,7 @@
     Levantamento de requisitos  :a2, after a1, 15d
     Levantamento de dados       :a3,2022-11-01, 15d
     Levantamento de literatura  :a3, after a1, 25d
+    levantamento de litura sobre analise de dados: m9, after m8, 10d
     
     Diagramação do Banco de Dados :d1, 2023-01-15, 15d
     Elicitação de Requisitos para Banco de Dados: f5, after d11, 7d
@@ -23,7 +24,7 @@
     Criação Logo Marca          :c2, after c1, 5d
     criação de Layout           :c3, after c2, 15d
     criação de Prototipo        :c4, after c3, 35d
-    section Desenvolvimento 
+    section Desenvolvimento WEB e MOBILE
    
     Prototipação do Banco de Dados :d2, after d1, 15d
     Desenvolvimento Web (Front-End) :d3, after d2, 30d
@@ -32,6 +33,9 @@
     Desenvolvimento de Api com FastAPI: j7, after h6, 20d
     Desenvolvimento de App Web (usuario-clinica): m7,after l10, 15d
     Desenvolvimento de App Mobile(usuario-paciente): m8, after m7, 15d
+    section desevolvimento WEB ANALISE DE DADOS
+
+    Desenvolvimento de tratamento de Dados(PANDAS): m9, after m8, 15d
 
     section TESTES 
     Teste Unitário API: n10, after m8, 10d
