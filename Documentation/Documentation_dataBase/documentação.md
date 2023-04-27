@@ -9,6 +9,12 @@
     Levantamento de requisitos  :a2, after a1, 15d
     Levantamento de dados       :a3,2022-11-01, 15d
     Levantamento de literatura  :a3, after a1, 25d
+    
+    Diagramação do Banco de Dados :d1, 2023-01-15, 15d
+    Elicitação de Requisitos para Banco de Dados: f5, after d11, 7d
+    Elicitação de Requisitos API: h6, after g5, 7 d
+    Elicitação de UI com flutter: l10, after j7, 15d
+
     section Pesquisa
     Analide de Dados            :b3, after b2, 10d
     section Prototipação
@@ -18,26 +24,27 @@
     criação de Layout           :c3, after c2, 15d
     criação de Prototipo        :c4, after c3, 35d
     section Desenvolvimento 
-    Diagramação do Banco de Dados :d1, 2023-01-15, 15d
+   
     Prototipação do Banco de Dados :d2, after d1, 15d
     Desenvolvimento Web (Front-End) :d3, after d2, 30d
+    Desenvolvimento de Banco de Dados: g5,after f5, 15d
+    
+    Desenvolvimento de Api com FastAPI: j7, after h6, 20d
+    Desenvolvimento de App Web (usuario-clinica): m7,after l10, 15d
+    Desenvolvimento de App Mobile(usuario-paciente): m8, after m7, 15d
+
+    section TESTES 
+    Teste Unitário API: n10, after m8, 10d
+    Teste de Carga: n11, after n10, 10d
+    Revisão e correções: p5, after n11, 15d
+    
     section Defesa
     Organização da Apresentação :e1,2023-03-10, 10d
     Organização do Slide :e1,2023-03-13,8d
     Ensaio da Apresentação :e2,after e1, 7d
     Ajustes Finais : e3,after e2, 23
-  
     Apresentação e entrega  :crit,milestone,2023-03-30, 1d
-    Elicitação de Requisitos para Banco de Dados: f5, after d11, 7d
-    Desenvolvimento de Banco de Dados: g5,after f5, 15d
-    Elicitação de Requisitos API: h6, after g5, 7 d
-    Desenvolvimento de Api com FastAPI: j7, after h6, 20d
-    Elicitação de UI com flutter: l10, after j7, 15d
-    Desenvolvimento de App Web (usuario-clinica): m7,after l10, 15d
-    Desenvolvimento de App Mobile(usuario-paciente): m8, after m7, 15d 
-    Teste Unitário API: n10, after m8, 10d
-    Teste de Carga: n11, after n10, 10d
-    Revisão e correções: p5, after n11, 15d
+  
     
 
 ```
