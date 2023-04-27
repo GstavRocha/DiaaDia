@@ -28,6 +28,17 @@
     Ajustes Finais : e3,after e2, 23
   
     Apresentação e entrega  :crit,milestone,2023-03-30, 1d
+    Elicitação de Requisitos para Banco de Dados: f5, after d11, 7d
+    Desenvolvimento de Banco de Dados: g5,after f5, 15d
+    Elicitação de Requisitos API: h6, after g5, 7 d
+    Desenvolvimento de Api com FastAPI: j7, after h6, 20d
+    Elicitação de UI com flutter: l10, after j7, 15d
+    Desenvolvimento de App Web (usuario-clinica): m7,after l10, 15d
+    Desenvolvimento de App Mobile(usuario-paciente): m8, after m7, 15d 
+    Teste Unitário API: n10, after m8, 10d
+    Teste de Carga: n11, after n10, 10d
+    Revisão e correções: p5, after n11, 15d
+    
 
 ```
 ### Curriculos do Programa da Graduação de Tecnologia e Sistemas para Internet - TSI que contemplados no projeto.
@@ -41,6 +52,8 @@
 * Desenvolvimento de Sistemas Corporativos;
 * Banco de Dados;
 * Projetos de Software - APSWEB.
+* Teste de Software;
+* Desenvolvimento Mobile;
 
 ________________________________________
 # PROTOTIPO #
