@@ -1,4 +1,7 @@
-## Cronograma de Atividades
+# Cronograma de Atividades 1° ETAPA #
+
+## INÍCIO 10/2022.
+
 ``` mermaid
     gantt
     title Cronograma 1° ETAPA
@@ -46,10 +49,52 @@
     Organização da Apresentação :e1,2023-03-10, 10d
     Organização do Slide :e1,2023-03-13,8d
     Ensaio da Apresentação :e2,after e1, 7d
-    Ajustes Finais : e3,after e2, 23
+    Ajustes Finais : e3,after e2, 23d
     Apresentação e entrega  :crit,milestone,2023-03-30, 1d
   
     
+
+```
+# Cronograma de Atividades 2° ETAPA #
+
+## INÍCIO 04/2023
+``` mermaid
+    gantt
+    title Cronograma 2° ETAPA
+    dateFormat  YYYY-MM-DD
+    section Documentação
+
+
+    Apresentação da Segunda Etapa do Projeto: crit,milestone, 2023-04-14, 1d
+
+    section Levantamento Bibliográfico
+    Learning PostgresSQL - Salahaldin, Juba         : a1, after 2023-04-14, 10d
+    PosgreSQL Administration Cookbook - Riggs, Simon: b2, after a1, 10d
+    Dart Essentials - Martin, Sikora                : c3, after b2, 10d
+    Dart for Absolute Beginners - Kopec             : d4, after c3, 10d
+    Flutter In Action - Widmill, Eric               : d5, after d4, 10d
+    Python Data Analytics - Neilli , Fabio          : d6, after d5, 10d
+
+    section Documentação
+    Revisão de Diagramação de Banco de Dados        : e1, after d6, 3d
+    Elicitação de Requisitos - Banco de Dados       : e2, after e1, 3d
+    Digramação de API                               : e3, after e2, 2d
+    Digramação de Aplicação                         : e4, after e3, 3d
+    Digramação de Caso de Uso                       : e5, after e4, 5d
+    Levantamento e Analise UI                       : e6, after e5, 3d
+
+    section Desenvolvimento
+    Desenvolvimento API - FAST API                  : f1, after e5, 10d
+    Desenvolvimento Banco de Dados                  : f2, after f1, 7d
+    Desenvolvimento usuário - Clinica (web)         : f3, after f2, 10d
+    Desenvolvimento usuário - paciente (Mobile)     : f4, after f3, 15d
+    Desenvolvimento Analise de Dados - Pandas (usuario - paciente)  :f5, after f4, 5d
+
+    section Testes
+    Teste Unitário                                  :g1, after f5, 10d
+    Teste de Carga                                  :g2, after g1, 10d
+    Revisão de projeto                              :g3, after g2, 7d
+    Apresentação e entrega                          :crit,milestone,2023-09-27, 1d
 
 ```
 ### Curriculos do Programa da Graduação de Tecnologia e Sistemas para Internet - TSI que contemplados no projeto.
