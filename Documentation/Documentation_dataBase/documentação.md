@@ -3,7 +3,7 @@
 ## INÍCIO 10/2022.
 
 ``` mermaid
-    gantt
+      gantt
     title Cronograma 1° ETAPA
     dateFormat  YYYY-MM-DD
     section Documentação
@@ -12,13 +12,6 @@
     Levantamento de requisitos  :a2, after a1, 15d
     Levantamento de dados       :a3,2022-11-01, 15d
     Levantamento de literatura  :a3, after a1, 25d
-    levantamento de litura sobre analise de dados: m9, after m8, 10d
-    
-    Diagramação do Banco de Dados :d1, 2023-01-15, 15d
-    Elicitação de Requisitos para Banco de Dados: f5, after d11, 7d
-    Elicitação de Requisitos API: h6, after g5, 7 d
-    Elicitação de UI com flutter: l10, after j7, 15d
-
     section Pesquisa
     Analide de Dados            :b3, after b2, 10d
     section Prototipação
@@ -27,30 +20,18 @@
     Criação Logo Marca          :c2, after c1, 5d
     criação de Layout           :c3, after c2, 15d
     criação de Prototipo        :c4, after c3, 35d
-    section Desenvolvimento WEB e MOBILE
-   
+    section Desenvolvimento 
+    Diagramação do Banco de Dados :d1, 2023-01-15, 15d
     Prototipação do Banco de Dados :d2, after d1, 15d
     Desenvolvimento Web (Front-End) :d3, after d2, 30d
-    Desenvolvimento de Banco de Dados: g5,after f5, 15d
-    
-    Desenvolvimento de Api com FastAPI: j7, after h6, 20d
-    Desenvolvimento de App Web (usuario-clinica): m7,after l10, 15d
-    Desenvolvimento de App Mobile(usuario-paciente): m8, after m7, 15d
-    section desevolvimento WEB ANALISE DE DADOS
-
-    Desenvolvimento de tratamento de Dados(PANDAS): m9, after m8, 15d
-
-    section TESTES 
-    Teste Unitário API: n10, after m8, 10d
-    Teste de Carga: n11, after n10, 10d
-    Revisão e correções: p5, after n11, 15d
-    
     section Defesa
     Organização da Apresentação :e1,2023-03-10, 10d
     Organização do Slide :e1,2023-03-13,8d
     Ensaio da Apresentação :e2,after e1, 7d
-    Ajustes Finais : e3,after e2, 23d
+    Ajustes Finais : e3,after e2, 23
+  
     Apresentação e entrega  :crit,milestone,2023-03-30, 1d
+    
   
     
 
@@ -102,6 +83,8 @@
 ### Curriculos Não Técnicos:
 * Metodologia do Trabalho Científico;
 * Leitura e produção de Textos Acadêmicos;
+* Empreendorismo;
+
 ### Curriculos Técnicos:
 * Desenvolvimento Web - Front End;
 * Desenvolvimento Web - Back End;
