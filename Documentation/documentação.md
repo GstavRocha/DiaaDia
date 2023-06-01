@@ -93,8 +93,18 @@
 * Projetos de Software - APSWEB.
 * Teste de Software;
 * Desenvolvimento Mobile;
+_______________________________________
+# DIAGRAMA DE COMPONENTES #
+###  Usuário Paciente ###
+<img src="Component_Diagram/usuario-paciente.svg">
 
-________________________________________
+### Usuário Médico ###
+
+<img src="Component_Diagram/usuario-medico.svg">
+
+### Usuário Clinica ###
+<img src="Component_Diagram/usuario-clinica.svg">
+
 # PROTOTIPO #
 
 ## CLINICA (BROWSER) ##
