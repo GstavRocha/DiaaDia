@@ -96,19 +96,19 @@
 _______________________________________
 # DIAGRAMA DE COMPONENTES #
 ###  Usuário Paciente ###
-<img src="Component_Diagram/usuario-paciente.svg">
+<img src="Documentation_dataBase/Component_Diagram/usuario-paciente.svg">
 
 ### Usuário Médico ###
 
-<img src="Component_Diagram/usuario-medico.svg">
+<img src="Documentation_dataBase/Component_Diagram/usuario-medico.svg">
 
 ### Usuário Clinica ###
-<img src="Component_Diagram/usuario-clinica.svg">
+<img src="Documentation_dataBase/Component_Diagram/usuario-clinica.svg">
 
 # PROTOTIPO #
 
 ## CLINICA (BROWSER) ##
-<img src="./img/browserIndex.png">
+<img src="Documentation_dataBase/img/browserIndex.png">
 
 ### CLÍNICA LOGIN ### 
 
@@ -119,7 +119,7 @@ Tela de login, navegador para usuário-clínica.
     *   Esqueci Password
 
 ## CLINICA DASHBOARD(BROWSER) ##
-<img src="./img/browserDash.png">
+<img src="Documentation_dataBase/img/browserDash.png">
 
 ### DASHBOARD ###
 
@@ -167,7 +167,7 @@ Interface relacionada ao cadastro dos usuários-pacientes e seus relativos dados
 _____________________________________________________
 
 # USUÁRIO-PACIENTE (MOBILE) #
-<img src="./img/mobileIndex.png">
+<img src="Documentation_dataBase/img/mobileIndex.png">
 
 ### PACIENTE LOGIN ###
 
@@ -178,7 +178,7 @@ Tela de login, navegador para usuário-paciente.
     *   Esqueci Password
   
 ## INTEFACE AFERIÇÃO PACIENTE (MOBILE) ##
-<img src="./img/afermobile.png">
+<img src="Documentation_dataBase/img/afermobile.png">
 
 Interface de aferição do usuário para controle de índice glicêmico. Primeira tela caso o usuário-paciente tenha agendado tal rotina.
 
@@ -188,7 +188,7 @@ Interface de aferição do usuário para controle de índice glicêmico. Primeir
     * corrigir: Botão para correção, caso necessite.
   
 ## INTEFACE GRÁFICOS PACIENTE (MOBILE) ##
-<img src="./img/modileGrafic.png">
+<img src="Documentation_dataBase/img/modileGrafic.png">
 
 Interface de verificação de aferições, é exibido o gráfico que faz as medições em relação as alterações do índice glicêmico por período( semanais ou mensais, quando disponíveis.).
 
@@ -198,7 +198,7 @@ Interface de verificação de aferições, é exibido o gráfico que faz as medi
 ____________________________________________________________  
 # MÉDICO(A) (BROWSER/MOBILE- RESPONSIVE) #
 
-<img src="./img/medicIndex.png">
+<img src="Documentation_dataBase/img/medicIndex.png">
 
 ## MÉDICO LOGIN ##
 
@@ -209,7 +209,7 @@ Tela de login, navegador para usuário-médico.
     *   Esqueci Password
 
 ## MÉDICO INTERFACE ##
-<img src="./img/medicdash.png">
+<img src="Documentation_dataBase/img/medicdash.png">
 
 Interface de consutal Usuário-Paciente. 
     * pesquisar paciente: Barra de pesquisa para consultar paciente e seus respectivos dados para consulta.
