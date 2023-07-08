@@ -44,7 +44,7 @@ create table tbClinica
 
 create table tbPacient
 (
-    id               int      not null
+    id               int auto_increment
         primary key,
     idPacient        int      not null,
     tipeDiabets      tinyint  not null comment '1: Diabetes tipe 1,2: Diabetes tipe 2, 3: Diabetes tipe 3(gestacional)',
@@ -53,7 +53,38 @@ create table tbPacient
     measureGlicToday date     not null,
     measureHours     datetime not null,
     entreyApp        datetime not null,
-    constraint fk_user
-        foreign key (id) references tbUser (id)
+    constraint fkUserPacient
+        foreign key (idPacient) references tbUser (id)
+);
+
+create table tbMeasurements
+(
+    id         int auto_increment
+        primary key,
+    idUser     int       not null,
+    sugarLevel float     not null,
+    hour       time      not null,
+    day        timestamp not null,
+    date       datetime  not null,
+    constraint fkMeasurmentUser
+        foreign key (idUser) references tbPacient (id)
+);
+
+create table tbQueries
+(
+    id        int auto_increment
+        primary key,
+    idPacient int       not null,
+    idMedic   int       not null,
+    idClinic  int       not null,
+    day       int       not null,
+    hour      int       not null,
+    registry  timestamp not null,
+    constraint fkQuerieClinic
+        foreign key (idClinic) references tbClinica (id),
+    constraint fkQuerieMedic
+        foreign key (idMedic) references tbMedico (id),
+    constraint fkQueriePacient
+        foreign key (idPacient) references tbPacient (id)
 );
 
