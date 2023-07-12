@@ -62,7 +62,7 @@ create table tbMeasurements
     id         int auto_increment
         primary key,
     idUser     int       not null,
-    sugarLevel float     not null,
+    sugarLevel float     not null,cd.
     hour       time      not null,
     day        timestamp not null,
     date       datetime  not null,
