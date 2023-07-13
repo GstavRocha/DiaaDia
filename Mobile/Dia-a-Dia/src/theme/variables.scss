@@ -236,8 +236,9 @@
 }
 
 .ion-color-diadia{
-  --fundo-color: #fff;
-  --letras-color: #000;
-  /aqui/
+  --fundobranco-color:  var(--ion-color-danger-contrast);
+  --fundoescuro--color: var(--ion-color-tertiary-tint);
+  --letras-color: var(--ion-border-color);
+  --botao-coler:var(--ion-color-danger-tint);
 
 }
