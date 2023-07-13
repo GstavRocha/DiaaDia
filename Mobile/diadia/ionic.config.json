@@ -1,0 +1,7 @@
+{
+  "name": "diadia",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
