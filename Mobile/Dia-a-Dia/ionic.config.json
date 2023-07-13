@@ -1,7 +1,0 @@
-{
-  "name": "Dia-a-Dia",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}

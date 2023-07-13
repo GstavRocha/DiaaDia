@@ -1,0 +1,42 @@
+.logoGrande{
+  top: 10%;
+  left: 20%;
+  right: 76.2px;
+  width: 255px;
+  height: 150px;
+  transform: rotate(0.416deg);
+  flex-shrink: 0;
+  border-radius: 96px 219.092px 219.092px 80px;
+}
+.rectangle{
+  position: absolute;
+  height: 10%;
+  top: 90%;
+  background: linear-gradient(90deg, #EEAFC9 32.99%, #8E8EE9 70.9%);
+}
+.loginBox{
+  position: relative;
+  width: 611px;
+  height: 300px;
+  top: -100px;
+  left: 220px;
+  background: rgb(255, 255, 255);
+}
+.Titulo{
+  color: rgba(0, 0, 0, 0.88);
+  font-family: Work Sans, serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -1px;
+}
+.subtitulo{
+  color: rgba(0, 0, 0, 0.88);
+  font-family: Work Sans, serif;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: -0.7px;
+}
