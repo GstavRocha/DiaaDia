@@ -15,12 +15,30 @@
   background: linear-gradient(90deg, #EEAFC9 32.99%, #8E8EE9 70.9%);
 }
 .loginBox{
+  top: 5%;
+  width: 100%;
+  height: 25%;
+  left: 0px;
+  background: transparent;
+}
+.loginBox ion-text{
+  top: 5%;
   position: relative;
-  width: 611px;
-  height: 300px;
-  top: -100px;
-  left: 220px;
-  background: rgb(255, 255, 255);
+  color: #fcfcfc;
+  font-family: Work Sans, serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  padding-bottom: 5%;
+}
+.loginBox ion-button{
+  position: inherit;
+  width: 100%;
+  height: 50%;
+  border-radius: 80%;
+  flex-shrink: 0;
 }
 .Titulo{
   color: rgba(0, 0, 0, 0.88);
@@ -39,5 +57,58 @@
   font-weight: 300;
   line-height: normal;
   letter-spacing: -0.7px;
+}
 
+@media (prefers-color-scheme: dark){
+  .subtitulo{
+    color: rgb(252, 252, 252);
+    font-family: Work Sans, serif;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.7px;
+  }
+  .Titulo{
+    color: rgb(255, 255, 255);
+    font-family: Work Sans, serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1px;
+  }
+  .rectangle{
+    position: absolute;
+    height: 10%;
+    top: 90%;
+    background: linear-gradient(90deg, #8E8EE9 32.99%, #EEAFC9  70.9%);
+  }
+  .loginBox{
+    top: 5%;
+    width: 100%;
+    height: 25%;
+    left: 0px;
+    color: #d0d0d0;
+    background: transparent;
+  }
+  .loginBox ion-text{
+    top: 5%;
+    position: relative;
+    color: #fcfcfc;
+    font-family: Work Sans, serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.4px;
+    padding-bottom: 5%;
+  }
+  .loginBox ion-button{
+    position: inherit;
+    width: 100%;
+    height: 50%;
+    border-radius: 80%;
+    flex-shrink: 0;
+  }
 }

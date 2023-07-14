@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
+import {NavController} from "@ionic/angular";
 
 @Component({
   selector: 'app-login',
@@ -6,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.page.scss'],
 })
 export class LoginPage implements OnInit {
+  @ViewChild('conteudo') content: any;
 
-  constructor() { }
-
+  constructor(private navCtrl: NavController) { }
+  entrar(){
+    this.navCtrl.navigateForward('tabs')
+  }
   ngOnInit() {
   }
 

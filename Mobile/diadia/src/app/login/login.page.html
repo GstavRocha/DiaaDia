@@ -1,8 +1,22 @@
 <ion-header [translucent]="false" class="rectangle">
 </ion-header>
 
-<ion-content [fullscreen]="false" class="logoGrande" style="color: #FFFFFF">
+<ion-content [fullscreen]="false" class="logoGrande" style="color: #FFFFFF" #conteudo>
      <img src="assets/image/pequena.png" alt="logo">
   <ion-title class="Titulo">Dia a Dia </ion-title>
   <ion-text class="subtitulo"> Índice Glicêmico</ion-text>
+  <div class="loginBox">
+    <ion-item>
+      <ion-text class="loginBox">login</ion-text></ion-item>
+    <ion-item>
+      <ion-input label="Nome:" type="text" placeholder="Digite seu nome" [clearInput]="true"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input label="Senha:" type="password" placeholder="******"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-button shape="round" color="tertiary" (click)="entrar()">Entrar</ion-button>
+    </ion-item>
+
+  </div>
 </ion-content>
