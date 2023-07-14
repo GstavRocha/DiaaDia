@@ -1,0 +1,147 @@
+.logoGrande{
+  top: 10%;
+  left: 20%;
+  right: 76.2px;
+  width: 255px;
+  height: 150px;
+  transform: rotate(0.416deg);
+  flex-shrink: 0;
+  border-radius: 96px 219.092px 219.092px 80px;
+}
+.rectangleCima{
+  position: absolute;
+  height: 10%;
+  background: linear-gradient(90deg, #EEAFC9 32.99%, #8E8EE9 70.9%);
+}
+.loginBox{
+  top: 5%;
+  width: 100%;
+  height: 25%;
+  left: 0px;
+  background: transparent;
+}
+.loginBox ion-text{
+  top: 5%;
+  position: relative;
+  color: #fcfcfc;
+  font-family: Work Sans, serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  padding-bottom: 5%;
+}
+.loginBox ion-button{
+  position: inherit;
+  width: 100%;
+  height: 50%;
+  border-radius: 80%;
+  flex-shrink: 0;
+}
+.Titulo ion-text{
+  font-size: 5px;
+}
+.Titulo{
+  color: rgba(0, 0, 0, 0.88);
+  font-family: Work Sans, serif;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+  letter-spacing: -1px;
+}
+.subtitulo{
+  color: rgba(0, 0, 0, 0.88);
+  font-family: Work Sans, serif;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: -0.7px;
+}
+
+@media (prefers-color-scheme: dark){
+  .subtitulo{
+    color: rgb(252, 252, 252);
+    font-family: Work Sans, serif;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.7px;
+  }
+  .Titulo ion-text{
+    font-size: 37px;
+  }
+  .Titulo{
+    color: #200E32;
+    font-family: Work Sans, serif;
+    font-size: 37px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.74px;
+  }
+  .subtitulo{
+    color: rgba(0, 0, 0, 0.88);
+    font-family: Work Sans, serif;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.7px;
+  }
+  .loginBox{
+    top: 5%;
+    width: 100%;
+    height: 25%;
+    left: 0px;
+    color: #d0d0d0;
+    background: transparent;
+  }
+  .loginBox ion-text{
+    top: 5%;
+    position: relative;
+    color: #fcfcfc;
+    font-family: Work Sans, serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.4px;
+    padding-bottom: 5%;
+  }
+  .loginBox ion-button{
+    position: inherit;
+    width: 100%;
+    height: 50%;
+    border-radius: 80%;
+    flex-shrink: 0;
+  }
+  .logoPequena{
+    width: 63.379px;
+    transform: rotate(0.416deg);
+    flex-shrink: 0;
+  }
+  .grid-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .grid-container1 {
+    flex: 1;
+  }
+
+  .grid-container2 {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .Titulo {
+    margin: 0;
+    padding-right: 10px;
+  }
+
+}

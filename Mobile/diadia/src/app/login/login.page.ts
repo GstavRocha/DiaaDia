@@ -7,12 +7,8 @@ import {NavController} from "@ionic/angular";
   styleUrls: ['./login.page.scss'],
 })
 export class LoginPage implements OnInit {
-  @ViewChild('conteudo') content: any;
 
   constructor(private navCtrl: NavController) { }
-  entrar(){
-    this.navCtrl.navigateForward('tabs')
-  }
   ngOnInit() {
   }
 

@@ -32,7 +32,7 @@ const routes: Routes = [
     pathMatch: 'full'
   }
 ];
-
+console.log(routes)
 @NgModule({
   imports: [RouterModule.forChild(routes)],
 })
