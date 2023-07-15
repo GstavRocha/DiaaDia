@@ -6,17 +6,27 @@
       </ion-text>
     </div>
     <div class="grid-container2">
-      <img src="assets/image/pequena.png">
+      <img src="assets/image/pequena.png" class="logoPequena">
     </div>
   </div>
 </ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+<ion-content>
+<div class="boxButton">
+    <ion-label class="boxButton"> Verificar Gráficos</ion-label>
+    <ion-button shape="round" color="tertiary">Acessar</ion-button>
+</div>
+  <div class="display">
+    <div class="painelAfe">
+      <ion-label class="displayTexto">Texto com dada e dia</ion-label>
+      <ion-title class="dispalyMedidor">100</ion-title>
+    </div>
+    <ion-text class="notificacao">promixa aferição.</ion-text>
+  </div>
+  <div class="botoesAfericao">
+    <ion-item>
+      <ion-button> Enviar</ion-button>
+      <ion-button> Corrigir</ion-button>
+    </ion-item>
+  </div>
 </ion-content>
+<app-explore-container name="Tab 1 page"></app-explore-container>
