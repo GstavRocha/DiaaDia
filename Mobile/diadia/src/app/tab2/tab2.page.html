@@ -1,17 +1,29 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
-  </ion-toolbar>
+<ion-header [translucent]="true" class="rectangleCima">
+  <div class="grid-container">
+    <div class="grid-container1">
+      <ion-text class="Titulo">
+        Dia a Dia
+      </ion-text>
+    </div>
+    <div class="grid-container2">
+      <img src="assets/image/pequena.png" class="logoPequena" alt="logo">
+    </div>
+  </div>
 </ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
+<ion-content>
+  <ion-text class="displayTexto"> Medições Semanais</ion-text>
+  <div class="boxButton">
+      <ion-label class="boxButton"> Agendar consulta</ion-label>
+      <ion-button shape="round" color="tertiary" routerLink="/tab2">agendar</ion-button>
+  </div>
+  <div class="display">
+    <div class="painelAfe">
+      <ion-label class="displayTexto">Texto com dada e dia</ion-label>
+      <ion-title class="dispalyMedidor">100</ion-title>
+    </div>
+  </div>
+    <div class="botoesAfericao">
+    </div>
+  </ion-content>
+  <ion-footer class="rectanglebaixo"></ion-footer>
   <app-explore-container name="Tab 2 page"></app-explore-container>
-</ion-content>
