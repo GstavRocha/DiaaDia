@@ -8,7 +8,7 @@ import {NavController} from "@ionic/angular";
 })
 export class LoginPage implements OnInit {
 
-  constructor(private navCtrl: NavController) { }
+  constructor() { }
   ngOnInit() {
   }
 

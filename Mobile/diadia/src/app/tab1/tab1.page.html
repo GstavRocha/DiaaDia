@@ -13,7 +13,7 @@
 <ion-content>
 <div class="boxButton">
     <ion-label class="boxButton"> Verificar Gráficos</ion-label>
-    <ion-button shape="round" color="tertiary">Acessar</ion-button>
+    <ion-button shape="round" color="tertiary" routerLink="tab2">Acessar</ion-button>
 </div>
   <div class="display">
     <div class="painelAfe">
@@ -23,10 +23,10 @@
     <ion-text class="notificacao">promixa aferição.</ion-text>
   </div>
   <div class="botoesAfericao">
-    <ion-item>
-      <ion-button> Enviar</ion-button>
-      <ion-button> Corrigir</ion-button>
-    </ion-item>
+      <ion-button class="botao1" color="tertiary" shape="round" size="large"> Enviar</ion-button>
+      <br>
+      <ion-button class="botao2" shape="round" color="danger"> Corrigir</ion-button>
   </div>
 </ion-content>
+<ion-footer class="rectanglebaixo"></ion-footer>
 <app-explore-container name="Tab 1 page"></app-explore-container>

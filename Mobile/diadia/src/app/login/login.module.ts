@@ -15,7 +15,6 @@ import {RouterModule} from "@angular/router";
     FormsModule,
     IonicModule,
     LoginPageRoutingModule,
-    RouterModule
   ],
   declarations: [LoginPage]
 })
