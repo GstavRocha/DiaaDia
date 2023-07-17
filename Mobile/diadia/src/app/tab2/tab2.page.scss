@@ -313,5 +313,11 @@
     left: 14%;
     margin: 0px 20%;
   };
+  #chartContainer {
+    min-width: 310px;
+    max-width: 800px;
+    height: 400px;
+    margin: 0 auto;
+  }
 
 }

@@ -10,18 +10,35 @@ import * as HighCharts from 'highcharts';
 export class Tab2Page {
   myChart: any;
   constructor(public nvCtrl: NavController) {}
-  ionViewDidLoad(){
-    this.myChart = HighCharts.chart('container',{
+  ionViewDidEnter() {
+    var myChart = HighCharts.chart('chartContainer',{
       chart:{
-        type: 'bar'
+        style:{
+          color: 'white'
+        },
+        type: 'spline',
+        backgroundColor: 'transparent',
       },
-      title:{
-        text: 'test'
+      title: {
+        text: 'Frutas'
       },
       xAxis:{
-        // https://www.highcharts.com/blog/tutorials/setting-chart-ionic-app-using-highcharts/
-      }
+        categories: ['Maça', 'bananas', 'laranjas']
+      },
+      yAxis: {
+        title: {
+          text: 'Fruit Eaten'
+        }
+      },
+      series: [{
+        name:'Jane',
+        type: 'line',
+        data: [1,0,4,10,13,15]
+      },{
+        name: 'Gustavo',
+        type: 'line',
+        data: [5,7,3,10,4,5,6]
+      }]
     })
   }
-
 }
