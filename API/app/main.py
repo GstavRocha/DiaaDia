@@ -1,7 +1,10 @@
 import mysql.connector
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from app.db import conn,cursor
+from .db import conn,cursor
+from .BaseModel.Model import *
+from .routers.newUser import registerUser
+from .routers.login import loginUser
 
 app = FastAPI()
 origins = [
@@ -15,6 +18,13 @@ app.add_middleware(
     allow_headers=["*"]
 )
 try:
+    @app.post("/register")
+    async def register(user: RegistreUser):
+        await registerUser(user.id, user.username, user.name, user.lastname, user.email, user.password, user.tipeClient)
+
+    @app.post("/login")
+    async def login(user: Login):
+        await loginUser(user.username, user.password)
     @app.get("/")
     def serveload():
         verify = HTTPException
