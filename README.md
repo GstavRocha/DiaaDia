@@ -1,4 +1,7 @@
 # **Dia Dia**
+LINK PARA APRESENTAÇÃO DIA 20/07: 
+https://www.canva.com/design/DAFpHHGVR9c/KUfGjBX03ApxRk0IKBUnfQ/edit?utm_content=DAFpHHGVR9c&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
 ## About
 LINK TO PRESENTATION: https://www.canva.com/design/DAFKnLt5DWE/xZfy8HNgPM0GMhbVMJyzIQ/view?utm_content=DAFKnLt5DWE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 <p> DiaADia is a application for desktop and mobile. We development a application for measure the diabetes glycemic indices. With all datas in hands, the application will historic graphs in the months and years of the glycemic levels. 
