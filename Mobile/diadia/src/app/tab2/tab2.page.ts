@@ -18,6 +18,7 @@ export class Tab2Page implements OnInit{
       chart: {
         type: 'column'
       },
+
       title:{
         text: 'Indices Glicêmicos da Semana'
       },
@@ -26,33 +27,32 @@ export class Tab2Page implements OnInit{
       },
       yAxis:{
         min:0,
-        max: 150,
         title: {
           text: 'Glicose'
         }
       },
+     plotOptions:{
+        area: {
+          threshold: 100
+        }
+     },
       tooltip:{
         pointFormat: '<span style="color:{series.color}">{series.name}</span>: <b>{point.y}</b> ({point.percentage:.0f}%)',
         shared: true
       },
-      plotOptions:{
-        column: {
-          stacking: 'percent'
-        }
-      },
-      series: [{
-        name: 'Glicose Alta',
-        type: 'column',
-        data: [100,150,110,98,99,110,150]
-      },{
-        name: 'Glicose Elevada',
-        type: 'column',
-        data: [110,115,130,134,114,116,125]
-      },{
-        name: 'Glicose Controlada',
-        type: 'column',
-        data: [100,100,100,99,98, 97, 99]
-      }]
+     series: [{
+       name: 'Jão Jan',
+       type: 'column',
+       data: [100, 150, 110, 98, 99, 110, 150],
+       dataLabels: {
+         enabled: true,
+         style: {
+           fontSize: '14px'
+         },
+         format: '{point.y}',
+         verticalAlign: 'bottom'
+       }
+     }]
     })
     };
   }

@@ -31,3 +31,10 @@ print(response)
 #         thread.join()
 #     print('teste Finalizando')
     # esse teste não está funcionando
+
+# 4. Teste de desempenho de API:
+# - Configure um grupo de threads para simular um número específico de chamadas simultâneas
+# à API.
+# - Adicione um Sampler HTTP para fazer solicitações aos endpoints da API.
+# - Use o Asserção de Resposta para verificar se os resultados estão corretos.
+# - Execute o teste e analise o desempenho, incluindo tempo de resposta, taxa de erro e latência.

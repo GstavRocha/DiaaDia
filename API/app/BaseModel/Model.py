@@ -13,3 +13,7 @@ class RegistreUser(BaseModel):
 class Login(BaseModel):
     username:str
     password: str
+
+class SessionData(BaseModel):
+    userId: str
+    username:str
