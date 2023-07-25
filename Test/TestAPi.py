@@ -1,40 +1,19 @@
-from threading import Thread
-import requests
+from locust import HttpUser, task, between
 
-url = 'http://127.0.0.1:8000/login'
-password = 'password10'
-username = 'sophia.hill'
-login = {
-    'username': username,
-    'password': password
-}
-response = requests.post(url, json=login)
-if response.status_code == 200:
-    token = response.json()['token']
-    headers = {
-        'Authorization': f'Bearer {token}'
-    }
-    print('Login acesso',response.status_code,response.headers)
-else:
-    print(f'Error o response{response} e o Header{response.headers}')
-print(response)
-# def apiTest(url):
-#     response = requests.get(url)
-#     print(response.status_code)
-#     threads = []
-#     for i in range(10):
-#         thread = Thread(target=apiTest, args=[url])
-#         threads.append(thread)
-#     for thread in threads:
-#         thread.start()
-#     for thread in threads:
-#         thread.join()
-#     print('teste Finalizando')
-    # esse teste não está funcionando
+class ApiDesempenho(HttpUser):
+    wait_time = between(1,2)
 
-# 4. Teste de desempenho de API:
-# - Configure um grupo de threads para simular um número específico de chamadas simultâneas
-# à API.
-# - Adicione um Sampler HTTP para fazer solicitações aos endpoints da API.
-# - Use o Asserção de Resposta para verificar se os resultados estão corretos.
-# - Execute o teste e analise o desempenho, incluindo tempo de resposta, taxa de erro e latência.
+    @task
+    def api_end_point(self):
+        endpoints = [
+            "http://127.0.0.1:8000/"
+                    ]
+        for endpoint in endpoints:
+            resposta = self.client.get(endpoint)
+            assert resposta.status_code == 200, f"Erro na solicitação {endpoint}"
+
+if __name__ =="__main__":
+    import os
+    os.system("locust -f TestApi.py")
+
+#  para testar  linha de comando: locust -f TestAPi.py --host=//localhost:8089

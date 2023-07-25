@@ -5,7 +5,7 @@ import requests
 
 class LoadTest(unittest.TestCase):
     def testLogin(self):
-        users = 20
+        users = 200
 
         def loginRequest():
             url = 'http://127.0.0.1:8000/login'
