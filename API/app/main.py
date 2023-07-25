@@ -8,7 +8,7 @@ from .db import conn,cursor
 from .BaseModel.Model import *
 from .routers.newUser import registerUser
 from .routers.login import loginUser
-from .routers.tokenSession import verificarSessaoToken
+from .routers.tokenSession import *
 
 app = FastAPI()
 origins = [
@@ -35,13 +35,14 @@ try:
             return response
         except HTTPException as e:
             return JSONResponse(content={"detail": e.detail}, status_code=e.status_code)
-
-
     @app.get("/protected")
     async def routeProtected(userId: int = Depends(verificarSessaoToken)):
-        if userId is None:
-            return {"message": "Acesso Negado. Token inválido"}
-        return {"message": "Acesso Permitido para Usuário {}".format(userId)}
+        try:
+            responseAPi =  userId
+            if responseAPi is None:
+                return {"message": "Acesso Negado. Token inválido"}
+        except HTTPException as t:
+            return JSONResponse(content={"message": "Acesso Permitido para Usuário"}, status_code=t.status_code)
     @app.get("/")
     def serveload():
         verify = HTTPException

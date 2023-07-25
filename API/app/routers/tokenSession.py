@@ -14,3 +14,5 @@ def verificarSessaoToken(token: str):
         return serializa.loads(token)["userId"]
     except BadSignature:
         return None
+
+

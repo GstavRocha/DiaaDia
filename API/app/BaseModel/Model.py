@@ -17,3 +17,5 @@ class Login(BaseModel):
 class SessionData(BaseModel):
     userId: str
     username:str
+class StoredApi(BaseModel):
+    token: int
