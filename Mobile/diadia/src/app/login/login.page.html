@@ -6,17 +6,44 @@
   <ion-title class="Titulo">Dia a Dia </ion-title>
   <ion-text class="subtitulo"> Índice Glicêmico</ion-text>
   <div class="loginBox">
-    <ion-item>
-      <ion-text class="loginBox">login</ion-text></ion-item>
-    <ion-item>
-      <ion-input label="Nome:" type="text" placeholder="Digite seu nome" [clearInput]="true"></ion-input>
+    <form [formGroup]="loginForm">
+<!--      <button (click)="onSubmit()">Verificar Login</button>-->
+   <ion-item>
+      <ion-text class="loginBox">login</ion-text>
     </ion-item>
     <ion-item>
-      <ion-input label="Senha:" type="password" placeholder="******"></ion-input>
+      <ion-input
+        label-placement="floating"
+        fill="solid"
+        label="Nome:"
+        type="text"
+        [counter]="true"
+        maxlength="20"
+        placeholder="Digite seu nome"
+        name="username"
+        formControlName="username"
+        [(ngModel)]="usuario.username"
+      >
+      </ion-input>
     </ion-item>
     <ion-item>
-      <ion-button shape="round" color="tertiary" routerLink="tab1">Entrar</ion-button>
+      <ion-input
+        label-placement="floating"
+        fill="solid"
+        label="Senha:"
+        type="password"
+        [counter]="true"
+        maxlength="20"
+        placeholder="******"
+        name="password"
+        formControlName="password"
+        [(ngModel)]="usuario.password"
+      >
+      </ion-input>
     </ion-item>
-
+    <ion-item>
+      <ion-button shape="round" color="tertiary"  type="submit" [disabled]="!loginForm.valid" (click)="onSubmit()">Entrar</ion-button>
+    </ion-item>
+    </form>
   </div>
 </ion-content>
