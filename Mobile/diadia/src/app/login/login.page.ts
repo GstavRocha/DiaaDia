@@ -22,11 +22,11 @@ export class LoginPage{
     })
   }
   async alertaBox(){
-    const alert = await this.alert.create(
+    const alert:HTMLIonAlertElement = await this.alert.create(
       {
         header: 'Alerta',
         subHeader: 'Erro de Login',
-        message: 'Inisra uma senha o login válidos',
+        message: 'Inisra uma senha ou login válidos',
         buttons: ['ok'],
       }
     );

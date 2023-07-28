@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import {Medida} from "./Medida";
-import {formatDate} from "@angular/common";
 
 @Injectable({
   providedIn: 'root'
@@ -11,6 +10,8 @@ export class MedidaService {
   private diaService: string;
   // private alertaService: string;
   private horaService: string;
+  private hourClean: any;
+  private dayClean: any;
   constructor() {
     // this.medidasLista = [];
     this.diaService = '';
@@ -35,5 +36,13 @@ export class MedidaService {
   submitMedidas(indice: string, dia: string, hora: string): void{
     const valor: Medida = {indice , dia, hora}
     console.log(valor)
+  }
+  proximaMedida():any{
+    const dataAtual = new Date()
+    const dataProxima = new Date(dataAtual.getTime() + 24 * 60 * 60 * 1000);
+    const diaProxima = dataProxima.getDate();
+    const horaProxima = dataProxima.getHours()
+    const minutesProxima = dataProxima.getMinutes();
+     return `horas ${horaProxima}:${minutesProxima} dia ${diaProxima}.`;
   }
 }

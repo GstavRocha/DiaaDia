@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import {MedidaService} from "../entrada/medida.service";
 import {Medida} from "../entrada/Medida";
-
+import { FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-tab1',
@@ -9,21 +9,34 @@ import {Medida} from "../entrada/Medida";
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
+  public MedirForm: FormGroup;
   public medida: Medida = new  Medida()
   public indice : string;
   public hora: any;
   public dia: any;
 
 
-  constructor(private Ms: MedidaService) {
+
+  constructor(private Ms: MedidaService, private fb: FormBuilder) {
     this.indice = '';
     this.dia = '';
     this.hora= '';
     this.setHora();
     this.setDia();
+    this.MedirForm = this.fb.group(
+      {
+        indice: ['', [Validators.required]],
+        dia: [this.dia, Validators.required],
+        hora: [this.hora,[Validators.required]]
+      }
+    )
   }
   limparCampo(): any{
-    this.indice = '';
+    this.MedirForm.setValue({
+      indice: '',
+      dia: this.dia,
+      hora: this.hora,
+    })
   }
   setDia():void {
     this.dia = this.Ms.formatandoData()
@@ -33,10 +46,12 @@ export class Tab1Page {
   }
   getMedida(): void{
     if(this.medida.indice){
-          console.log('digite de novo')
+          this.Ms.submitMedidas(this.medida.indice, this.dia, this.hora);
     }else{
       console.log(this.medida.indice,'aqui')
     }
-    // this.Ms.submitMedidas(this.medida.indice, this.dia, this.hora);
+  }
+  notificaMedida():string{
+    return this.Ms.proximaMedida();
   }
 }
