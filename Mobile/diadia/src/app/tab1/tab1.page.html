@@ -18,12 +18,12 @@
   <div class="display">
     <div class="painelAfe">
       <ion-label class="displayTexto">Texto com data e dia</ion-label>
-      <ion-title class="dispalyMedidor">100</ion-title>
+      <ion-input type="text" class="dispalyMedidor" [(ngModel)]="medida.indice" (focus)="limparCampo()"></ion-input>
     </div>
     <ion-text class="notificacao">promixa aferição.</ion-text>
   </div>
   <div class="botoesAfericao">
-      <ion-button class="botao1" color="tertiary" shape="round" size="large"> Enviar</ion-button>
+      <ion-button class="botao1" color="tertiary" shape="round" size="large" type="submit" placeholder="0" (click)="getMedida()"> Enviar</ion-button>
       <br>
       <ion-button class="botao2" shape="round" color="danger"> Corrigir</ion-button>
   </div>

@@ -1,40 +1,39 @@
 import { Injectable } from '@angular/core';
-import {Medida} from "./medida";
+import {Medida} from "./Medida";
 import {formatDate} from "@angular/common";
 
 @Injectable({
   providedIn: 'root'
 })
 export class MedidaService {
-  private medida: {indice: Medida, dia: Medida, data: Medida, alerta: Medida} [] = [];
-  private medidasLista: any [];
-  private indiceService: number;
+  private medida: Medida []= [];
+  // private medidasLista: any [];
   private diaService: string;
-  private alertaService: string;
+  // private alertaService: string;
   private horaService: string;
   constructor() {
-    this.medidasLista = [];
-    this.indiceService = 0;
+    // this.medidasLista = [];
     this.diaService = '';
-    this.alertaService= '';
+    // this.alertaService= '';
     this.horaService = '';
   }
-  // submitMedida(indice: Medida){
-  //   this.medida.push(indice: indice, dia: new Medida())
-  // }
-  public formatandoData(): void{
+  public formatandoData():String{
     const data = new Date();
     const month = String(data.getMonth()+1).padStart(2,'0');
     const day = String(data.getDate()+1).padStart(2,'0');
-    this.diaService = `${day}/${month}`;
+    return  this.diaService = `${day}/${month}`;
   }
 
-  public formantandoHora(): void{
+  public formantandoHora(): String{
     const time = new Date;
     const hora = time.getHours()
     const minutes = String(time.getMinutes()).padStart(2,'0');
     const ampm = hora >= 12? 'PM': 'AM';
     const hora12 = hora % 12 || 12;
-    this.horaService =`${hora12}:${minutes} ${ampm}`;
+    return  this.horaService =`${hora12}:${minutes} ${ampm}`;
+  }
+  submitMedidas(indice: string, dia: string, hora: string): void{
+    const valor: Medida = {indice , dia, hora}
+    console.log(valor)
   }
 }

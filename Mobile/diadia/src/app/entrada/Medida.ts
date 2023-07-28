@@ -1,12 +1,10 @@
 export class Medida{
-   indice: number;
+   indice: string;
    dia: string;
    hora: string;
-  alerta: string;
   constructor() {
-    this.indice = 0;
+    this.indice = '';
     this.dia = '';
     this.hora = '';
-    this.alerta ='';
   }
 }
