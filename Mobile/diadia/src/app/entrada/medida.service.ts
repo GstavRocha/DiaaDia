@@ -6,12 +6,12 @@ import {Medida} from "./Medida";
 })
 export class MedidaService {
   private medida: Medida []= [];
-  // private medidasLista: any [];
   private diaService: string;
   // private alertaService: string;
   private horaService: string;
   private hourClean: any;
   private dayClean: any;
+  private listaMedicoes: Medida[] = [];
   constructor() {
     // this.medidasLista = [];
     this.diaService = '';
@@ -35,6 +35,8 @@ export class MedidaService {
   }
   submitMedidas(indice: string, dia: string, hora: string): void{
     const valor: Medida = {indice , dia, hora}
+    this.medida.push(valor);
+    this.listaMedicoes.push(valor);
     console.log(valor)
   }
   proximaMedida():any{
@@ -44,5 +46,9 @@ export class MedidaService {
     const horaProxima = dataProxima.getHours()
     const minutesProxima = dataProxima.getMinutes();
      return `horas ${horaProxima}:${minutesProxima} dia ${diaProxima}.`;
+  }
+  obterListaMedicoes(): Medida[]{
+    // console.log('obterLista',this.listaMedicoes);
+    return this.listaMedicoes;
   }
 }

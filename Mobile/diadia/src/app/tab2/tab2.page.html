@@ -18,6 +18,7 @@
   </div>
     <div class="">
       <div id="chartContainer"></div>
+      <ion-text class="highcharts-description">Gáfico</ion-text>
     </div>
     <div class="">
       <ion-title> últimas Aferições</ion-title>
@@ -27,17 +28,11 @@
           <ion-label>Hora</ion-label>
           <ion-label>Indice</ion-label>
         </ion-item>
-        <ion-item>
-          <ion-label>02/07</ion-label>
-          <ion-label>12:00 pm</ion-label>
-          <ion-label>150</ion-label>
+        <ion-item *ngFor="let medicao of medidas">
+          <ion-label>{{medicao.dia}}</ion-label>
+          <ion-label>{{medicao.hora}}</ion-label>
+          <ion-label>{{medicao.indice}}</ion-label>
         </ion-item>
-        <ion-item>
-          <ion-label>03/07</ion-label>
-          <ion-label>13:00 pm</ion-label>
-          <ion-label>145</ion-label>
-        </ion-item>
-        <br>
       </ion-list>
     </div>
   </ion-content>
