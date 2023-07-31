@@ -41,8 +41,9 @@ export class Tab1Page {
   getMedida(): void{
     const dia = this.Ms.formatandoData().toString()
     const hora = this.Ms.formantandoHora().toString()
-    if(this.medida.indice){
+    if(this.medida.indice && this.medida.indice){
           this.Ms.submitMedidas(this.medida.indice, dia, hora);
+          this.limparCampo();
       console.log(dia,'aqui')
     }else{
       console.log(this.medida.indice,'aqui')

@@ -46,7 +46,6 @@ export class MedidaService {
      return `horas ${horaProxima}:${minutesProxima} dia ${diaProxima} / ${mes}`;
   }
   obterListaMedicoes(): Medida[]{
-    // console.log('obterLista',this.listaMedicoes);
     return this.listaMedicoes;
   }
 }

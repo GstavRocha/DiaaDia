@@ -3,6 +3,7 @@ import tt  from '@tomtom-international/web-sdk-maps';
 import { Geolocation,Position } from '@capacitor/geolocation';
 import {error} from "@angular/compiler-cli/src/transformers/util";
 import {HttpClient} from "@angular/common/http";
+import {MapService} from "../map/map.service";
 
 
 @Component({
@@ -19,9 +20,8 @@ export class Tab3Page implements OnInit{
   public resultados !: any;
   public searchResultMarker: any;
   private apiKey = "Lb4TsGDFHoP5ldvIcvjZEkKHPXx88xZk";
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient, private Mapa: MapService){
     this.getMarcador();
-    this.buscador(this.input);
     this.getEndereco(this.map);
   }
 
@@ -55,7 +55,15 @@ export class Tab3Page implements OnInit{
       const url = `https://api.tomtom.com/search/2/search/${query}.json?lat=${latitude}&lon=${longitude}&radius=${radiusInMeters}&categorySet=${category}&key=${this.apiKey}`;
       const res: any = await this.http.get(url).toPromise();
       this.resultados = res.results;
-      console.log(this.resultados)
+      this.Mapa.setQuery(query);
+       for(let i = 0; i < this.resultados.length; i++){
+         const address = this.resultados[i].address;
+         const name = this.resultados[i].poi;
+         const phone = this.resultados[i].poi;
+         const url = this.resultados[i].poi;
+           this.Mapa.setMapaDados(address,name,phone,url);
+
+       }
     } catch (error) {
       console.error('Erro ao buscar clínicas médicas:', error);
     }
