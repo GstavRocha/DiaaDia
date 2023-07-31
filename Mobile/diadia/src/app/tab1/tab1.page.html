@@ -12,8 +12,14 @@
 </ion-header>
 <ion-content>
 <div class="boxButton">
-    <ion-label class="boxButton"> Verificar Gráficos</ion-label>
-    <ion-button shape="round" color="tertiary" routerLink="/tab2">Acessar</ion-button>
+    <div class="botoesEsquerdos">
+      <ion-label> Usuários Dados</ion-label>
+      <ion-button shape="round" color="tertiary" routerLink="/tab5">Acessar</ion-button>
+    </div>
+    <div class="botoesDireitos">
+      <ion-label> Verificar Gráficos</ion-label>
+      <ion-button shape="round" color="tertiary" routerLink="/tab2">Verificar</ion-button>
+    </div>
 </div>
   <form [formGroup]="MedirForm">
     <div class="display">
