@@ -21,22 +21,16 @@ export class Tab1Page {
     this.indice = '';
     this.dia = '';
     this.hora= '';
-    this.setHora();
-    this.setDia();
     this.MedirForm = this.fb.group(
       {
         indice: ['', [Validators.required]],
-        dia: [this.dia, Validators.required],
-        hora: [this.hora,[Validators.required]]
+        dia: ['', Validators.required],
+        hora: ['',[Validators.required]]
       }
     )
   }
   limparCampo(): any{
-    this.MedirForm.setValue({
-      indice: '',
-      dia: this.dia,
-      hora: this.hora,
-    })
+    this.medida = new Medida();
   }
   setDia():void {
     this.dia = this.Ms.formatandoData()
@@ -45,8 +39,11 @@ export class Tab1Page {
     this.hora = this.Ms.formantandoHora()
   }
   getMedida(): void{
+    const dia = this.Ms.formatandoData().toString()
+    const hora = this.Ms.formantandoHora().toString()
     if(this.medida.indice){
-          this.Ms.submitMedidas(this.medida.indice, this.dia, this.hora);
+          this.Ms.submitMedidas(this.medida.indice, dia, hora);
+      console.log(dia,'aqui')
     }else{
       console.log(this.medida.indice,'aqui')
     }

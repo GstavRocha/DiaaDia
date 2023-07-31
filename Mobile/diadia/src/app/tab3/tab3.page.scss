@@ -1,0 +1,334 @@
+#map{
+  width: 100%;
+  height: 50%;
+  top: 10%;
+}
+.busca{
+  top: 10%;
+}
+.listaClincas{
+  top:15%;
+}
+.logoGrande{
+  top: 10%;
+  left: 20%;
+  right: 76.2px;
+  width: 255px;
+  height: 150px;
+  transform: rotate(0.416deg);
+  flex-shrink: 0;
+  border-radius: 96px 219.092px 219.092px 80px;
+};
+.rectangleCima{
+  position: absolute;
+  height: 10%;
+  background: linear-gradient(90deg, #EEAFC9 32.99%, #8E8EE9 70.9%);
+};
+.rectanglebaixo {
+  top: 95%;
+  position: absolute;
+  height: 5%;
+  background: linear-gradient(90deg, #EEAFC9  32.99%, #8E8EE9 70.9%);
+};
+.loginBox{
+  top: 5%;
+  width: 100%;
+  height: 25%;
+  left: 0px;
+  background: transparent;
+};
+.loginBox ion-text{
+  top: 5%;
+  position: relative;
+  color: #fcfcfc;
+  font-family: Work Sans, serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  padding-bottom: 5%;
+};
+.loginBox ion-button{
+  position: inherit;
+  width: 100%;
+  height: 50%;
+  border-radius: 80%;
+  flex-shrink: 0;
+};
+.Titulo ion-text{
+  font-size: 5px;
+};
+.Titulo{
+  color: #200E32;
+  font-family: Work Sans, serif;
+  font-size: 37px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.74px;
+};
+.subtitulo{
+  color: rgba(0, 0, 0, 0.88);
+  font-family: Work Sans, serif;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: -0.7px;
+};
+.logoPequena{
+  width: 70px;
+  transform: rotate(0.416deg);
+  flex-shrink: 0;
+};
+.grid-container {
+  display: flex;
+  align-items: center;
+  padding:   5px  15px 0px;
+};
+
+.grid-container1 {
+  flex: 1;
+};
+
+.grid-container2 {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+};
+.boxButton{
+  left: 20%;
+  position: relative;
+  height: 15%;
+  width: 100%;
+  margin-top: 20%;
+  background-color: transparent;
+};
+.boxButton ion-button{
+  margin-top: 5%;
+};
+.boxButton ion-label{
+  left: -15%;
+  top: 10%;
+  font-size: 25px;
+};
+.display{
+  width: 100%;
+  height: 40%;
+  flex-shrink: 0;
+  fill: #ffffff;
+};
+.painelAfe{
+  position: relative;
+  margin: 20% 22.5% 0px;
+  background-color: #2a2a2a;
+  height: 60%;
+  width: 60%;
+};
+.displayTexto{
+  position: absolute;
+  margin-top: 5%;
+  left: 15%;
+  text-align: center;
+  font-family: Inter, serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.4px;
+};
+.dispalyMedidor{
+  position: absolute;
+  margin-top: 20%;
+  left: 15%;
+  color: #EA9617;
+  text-align: center;
+  font-family: Inter, serif;
+  font-size: 87px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -1.74px;
+};
+.notificacao{
+  position: relative;
+  left: 30%;
+  text-align: center;
+  width: 100%;
+  height: 40px;
+  flex-shrink: 0;
+  color: #d5276a;
+  font-family: Inter, serif;
+  font-size: 26px;
+  font-style: normal;
+  margin-top: 20%;
+};
+.botoesAfericao{
+  width: 100%;
+  height: 15%;
+  background-color: transparent;
+}
+.botao1{
+  position: absolute;
+  top: 75%;
+  margin: 0px  20%;
+  left: 14.5%;
+};
+.botao2{
+  position: absolute;
+  top: 85%;
+  left: 14%;
+  margin: 0px 20%;
+};
+
+@media (prefers-color-scheme: dark){
+  ion-text{
+    color: #d0d0d0;
+  };
+  .rectangleCima {
+    position: absolute;
+    height: 10%;
+    background: linear-gradient(90deg, #8E8EE9 32.99%, #EEAFC9 70.9%);
+  };
+  .rectanglebaixo {
+    top: 95%;
+    position: absolute;
+    height: 5%;
+    background: linear-gradient(90deg, #8E8EE9 32.99%, #EEAFC9 70.9%);
+  };
+  .subtitulo{
+    color: rgb(252, 252, 252);
+    font-family: Work Sans, serif;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.7px;
+  };
+  .Titulo ion-text{
+    font-size: 37px;
+  };
+  .Titulo{
+    color: #200E32;
+    font-family: Work Sans, serif;
+    font-size: 37px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.74px;
+  };
+  .logoPequena{
+    width: 70px;
+    transform: rotate(0.416deg);
+    flex-shrink: 0;
+  };
+  .grid-container {
+    display: flex;
+    align-items: center;
+    padding:   5px  15px 0px;
+  };
+
+  .grid-container1 {
+    flex: 1;
+  };
+
+  .grid-container2 {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  };
+  .boxButton{
+    position: relative;
+    height: 15%;
+    width: 100%;
+    margin-top: 20%;
+    background-color: transparent;
+  };
+  .boxButton ion-button{
+    margin-left: 48.5%;
+    margin-top: 5%;
+  };
+  .boxButton ion-label{
+    top: 10%;
+    font-size: 25px;
+    margin-left: 40%;
+  };
+  .display{
+    width: 100%;
+    height: 40%;
+    flex-shrink: 0;
+    fill: #ffffff;
+  };
+  .painelAfe{
+    position: relative;
+    margin: 10% 10% 0px;
+    background-color: #2a2a2a;
+    height: 60%;
+    width: 80%;
+  };
+  .displayTexto{
+    position: absolute;
+    margin-top: 5%;
+    left: 15%;
+    text-align: center;
+    font-family: Inter, serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.4px;
+  };
+  .dispalyMedidor{
+    position: absolute;
+    margin-top: 20%;
+    left: 15%;
+    color: #EA9617;
+    text-align: center;
+    font-family: Inter, serif;
+    font-size: 87px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -1.74px;
+  };
+  .notificacao{
+    position: relative;
+    left: 30%;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    flex-shrink: 0;
+    color: #d5276a;
+    font-family: Inter, serif;
+    font-size: 26px;
+    font-style: normal;
+    margin-top: 20%;
+  };
+  .botoesAfericao{
+    width: 100%;
+    height: 15%;
+    background-color: transparent;
+  }
+  .botao1{
+    position: absolute;
+    top: 75%;
+    margin: 0px  20%;
+    left: 14.5%;
+  };
+  .botao2{
+    position: absolute;
+    top: 85%;
+    left: 14%;
+    margin: 0px 20%;
+  };
+  #chartContainer {
+    min-width: 310px;
+    max-width: 800px;
+    height: 400px;
+    margin: 0 auto;
+  }
+
+}

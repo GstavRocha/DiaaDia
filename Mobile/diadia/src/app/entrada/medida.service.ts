@@ -7,21 +7,18 @@ import {Medida} from "./Medida";
 export class MedidaService {
   private medida: Medida []= [];
   private diaService: string;
-  // private alertaService: string;
   private horaService: string;
   private hourClean: any;
   private dayClean: any;
   private listaMedicoes: Medida[] = [];
   constructor() {
-    // this.medidasLista = [];
     this.diaService = '';
-    // this.alertaService= '';
     this.horaService = '';
   }
   public formatandoData():String{
     const data = new Date();
     const month = String(data.getMonth()+1).padStart(2,'0');
-    const day = String(data.getDate()+1).padStart(2,'0');
+    const day = String(data.getDate()).padStart(2,'0');
     return  this.diaService = `${day}/${month}`;
   }
 
@@ -43,9 +40,10 @@ export class MedidaService {
     const dataAtual = new Date()
     const dataProxima = new Date(dataAtual.getTime() + 24 * 60 * 60 * 1000);
     const diaProxima = dataProxima.getDate();
+    const mes = dataProxima.getMonth();
     const horaProxima = dataProxima.getHours()
     const minutesProxima = dataProxima.getMinutes();
-     return `horas ${horaProxima}:${minutesProxima} dia ${diaProxima}.`;
+     return `horas ${horaProxima}:${minutesProxima} dia ${diaProxima} / ${mes}`;
   }
   obterListaMedicoes(): Medida[]{
     // console.log('obterLista',this.listaMedicoes);

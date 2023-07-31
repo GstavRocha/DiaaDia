@@ -1,17 +1,35 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
-  </ion-toolbar>
+<ion-header [translucent]="true" class="rectangleCima">
+  <div class="grid-container">
+    <div class="grid-container1">
+      <ion-text class="Titulo">
+        Dia a Dia
+      </ion-text>
+    </div>
+    <div class="grid-container2">
+      <img src="assets/image/pequena.png" class="logoPequena" alt="logo">
+    </div>
+  </div>
 </ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+<ion-content>
+  <ion-text class="displayTexto">Medições Semanais</ion-text>
+  <div id="map" #map></div>
+  <div>
+    <ion-item class="busca">
+      <ion-input [(ngModel)]="input" label="busca" label-placement="stacked" placeholder="digite aqui"></ion-input>
+      <ion-button (click)="buscador(input)">Buscar</ion-button>
+    </ion-item>
+  </div>
+  <ion-title>Clínicas Próximas</ion-title>
+  <ion-list>
+    <ion-item>
+      <ion-label>Nome</ion-label>
+    </ion-item>
+    <ion-item *ngFor="let resultado of resultados">
+      <ion-label>{{resultado.poi.name}}</ion-label>
+      <ion-button>Teste</ion-button>
+    </ion-item>
+  </ion-list>
 </ion-content>
+<ion-footer class="rectanglebaixo"></ion-footer>
+<app-explore-container name="Tab 2 page"></app-explore-container>
+
