@@ -1,25 +1,31 @@
-<ion-header [translucent]="true" class="rectangleCima">
-  <div class="grid-container">
-    <div class="grid-container1">
-      <ion-text class="Titulo">
-        Dia a Dia
-      </ion-text>
-    </div>
-    <div class="grid-container2">
-      <img src="assets/image/pequena.png" class="logoPequena" alt="logo">
-    </div>
-  </div>
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Photo Gallery
+    </ion-title>
+  </ion-toolbar>
 </ion-header>
-<ion-content class="texto">
-  <ion-title></ion-title>
-  <ion-list>
-    <ion-item>
-      <ion-label>Nome</ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-label></ion-label>
-    </ion-item>
-  </ion-list>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large"> Photo Gallery</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button (click)="addPhotoGallery()">
+      <ion-icon name="camera"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  <ion-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6" *ngFor=" let photo of pS.photos; index as position">
+          <ion-img [src]="photo.webviewPath"></ion-img>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+
+  <app-explore-container name="Tab 5 page"></app-explore-container>
 </ion-content>
-<ion-footer class="rectanglebaixo"></ion-footer>
-<app-explore-container name="Tab 3 page"></app-explore-container>

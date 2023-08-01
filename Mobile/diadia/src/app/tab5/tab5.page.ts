@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {PhotoService} from "../photo/photo.service";
 
 @Component({
   selector: 'app-tab5',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Tab5Page implements OnInit {
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor(public  pS: PhotoService) {}
+  addPhotoGallery(){
+    this.pS.addNewToGallery()
   }
-
+  async ngOnInit() {
+    await this.pS.loadSaved();
+  }
 }
