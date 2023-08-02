@@ -2,6 +2,8 @@ import {Component, OnInit} from '@angular/core';
 import {NavController} from "@ionic/angular";
 import * as HighCharts from 'highcharts';
 import darkUnica from 'highcharts/themes/dark-unica';
+import {MedidaService} from "../entrada/medida.service";
+import {Medida} from "../entrada/Medida";
 
 @Component({
   selector: 'app-tab2',
@@ -9,10 +11,20 @@ import darkUnica from 'highcharts/themes/dark-unica';
   styleUrls: ['tab2.page.scss']
 })
 export class Tab2Page implements OnInit{
-  myChart: any;
-  constructor(public nvCtrl: NavController) {}
+  public medidas: Medida []=[];
+  public myChart: any;
+  public indiceGlicemico: any;
+  public indiceDia: any;
+  public indiceHora: any;
+  public listaMedicoes:any = []
+  constructor(public nvCtrl: NavController, private Md: MedidaService) {}
 
   ngOnInit() {
+    this.medidas = this.Md.obterListaMedicoes()
+    this.indiceGlicemico = this.medidas.map((medicao)=> parseInt(medicao.indice));
+    this.indiceDia = this.medidas.map((medicao)=> medicao.dia);
+    console.log( this.indiceGlicemico,'indice glicemico')
+    console.log(this.listaMedicoes, 'verifica listamedicoes')
     darkUnica(HighCharts)
    this.myChart=  HighCharts.chart('chartContainer',{
       chart: {
@@ -23,7 +35,7 @@ export class Tab2Page implements OnInit{
         text: 'Indices Glicêmicos da Semana'
       },
       xAxis:{
-        categories:[ 'Segunda-Feira 26/06', 'Terça-Feira 27/06', 'Quarta-Feira 28/06', 'Quinta-Feira 29/06', 'Sexta-Feira 30/06', 'Sábado 01/07', 'Domingo 02/07' ]
+        categories: this.indiceDia
       },
       yAxis:{
         min:0,
@@ -43,7 +55,7 @@ export class Tab2Page implements OnInit{
      series: [{
        name: 'Jão Jan',
        type: 'column',
-       data: [100, 150, 110, 98, 99, 110, 150],
+       data: this.indiceGlicemico,
        dataLabels: {
          enabled: true,
          style: {
@@ -54,6 +66,6 @@ export class Tab2Page implements OnInit{
        }
      }]
     })
-    };
-  }
+  };
+}
 

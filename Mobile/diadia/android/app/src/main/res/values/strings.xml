@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">diaadia</string>
+    <string name="title_activity_main">diaadia</string>
+    <string name="package_name">dia.gustavo</string>
+    <string name="custom_url_scheme">dia.gustavo</string>
+</resources>

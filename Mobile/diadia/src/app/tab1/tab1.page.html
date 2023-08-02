@@ -12,21 +12,37 @@
 </ion-header>
 <ion-content>
 <div class="boxButton">
-    <ion-label class="boxButton"> Verificar Gráficos</ion-label>
-    <ion-button shape="round" color="tertiary" routerLink="/tab2">Acessar</ion-button>
-</div>
-  <div class="display">
-    <div class="painelAfe">
-      <ion-label class="displayTexto">Texto com dada e dia</ion-label>
-      <ion-title class="dispalyMedidor">100</ion-title>
+    <div class="botoesEsquerdos">
+      <ion-label> Usuários Dados</ion-label>
+      <ion-button shape="round" color="tertiary" routerLink="/tab5">Acessar</ion-button>
     </div>
-    <ion-text class="notificacao">promixa aferição.</ion-text>
+    <div class="botoesDireitos">
+      <ion-label> Verificar Gráficos</ion-label>
+      <ion-button shape="round" color="tertiary" routerLink="/tab2">Verificar</ion-button>
+    </div>
+</div>
+  <form [formGroup]="MedirForm">
+    <div class="display">
+      <div class="painelAfe">
+        <ion-label class="displayTexto">Texto com data e dia</ion-label>
+        <ion-input
+          fill="solid"
+          type="text"
+          class="dispalyMedidor"
+          name="indice"
+          formControlName ="indice"
+          [(ngModel)]="medida.indice"
+        >
+        </ion-input>
+      </div>
+      <ion-text class="notificacao"> proxima aferição:{{notificaMedida()}}</ion-text>
   </div>
   <div class="botoesAfericao">
-      <ion-button class="botao1" color="tertiary" shape="round" size="large"> Enviar</ion-button>
+      <ion-button class="botao1" color="tertiary" shape="round" size="large" type="submit" placeholder="0" (click)="getMedida()"> Enviar</ion-button>
       <br>
-      <ion-button class="botao2" shape="round" color="danger"> Corrigir</ion-button>
+      <ion-button class="botao2" shape="round" color="danger" (click)="limparCampo()"> Corrigir</ion-button>
   </div>
+  </form>
 </ion-content>
 <ion-footer class="rectanglebaixo"></ion-footer>
 <app-explore-container name="Tab 1 page"></app-explore-container>
