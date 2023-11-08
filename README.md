@@ -32,11 +32,13 @@ We consider the relevant contribuition the comunities for growth this tecnologie
 2. TypeScript;
 
 **Mobile Aplciation:**
-1. Flutter;
+1. Flutter
+2. Ionic Mobile;
 <br>
-2. Dart.
+3. Dart.
 ** Analise de Dados**
-1. Pandas;
+1. Pandas,
+2. Matplot;
 
 
 https://react-bootstrap.github.io/getting-started/introduction/
